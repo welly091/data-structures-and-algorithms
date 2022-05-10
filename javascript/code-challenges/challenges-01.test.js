@@ -85,10 +85,12 @@ Return the modified array.
 const addValues = (arr, value) => {
   arr.push(value)
 };
-
-const addNumbers = (num, arr, times, addValues) => {
+const test = (arr, value) =>{
+  return arr
+}
+const addNumbers = (num, arr, times, callback) => {
   for(let i = 0 ; i< times; i++){
-    addValues(arr, num)
+    callback(arr, num)
   }
   return arr;
 };
