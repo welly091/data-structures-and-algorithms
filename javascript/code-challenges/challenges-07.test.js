@@ -69,7 +69,8 @@ const howMuchPencil = (str) => {
     result.push(str)
     if(str.length > 0)str = str.substring(1)
     else break
-  }
+   }
+  
   return result;
 };
 
@@ -140,8 +141,14 @@ const listFoods = (recipe) => {
       element=element.substring(1)
     }
     result.push(element)
+
+    //Answer:
+    //let withoutAmount = ingredient.slice(ingredient.indexOf(' ') + 1);
+    //let withoutUnit = withoutamount.slice(withoutAmount.indexOf(' ') + 1);
+    //result.push(withoutUnit)
   })
 
+  
   return result;
 };
 
